@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int N, M;
+	cout << "Put the number N = ";
+	cin >> N;
+	int i, j;
+	int** massive = new int *[N];
+	int* secondDimOfMassive	= new int[N];
+	for(i = 0; i < N; i++)
+	{
+		cout << "Put the quantity" << i << ":"; 
+		cin >> M;
+		massive[i] = new int[M];
+		secondDimOfMassive[i] = M;
+	}
+	for (i = 0; i < N; i++)
+	{
+		for (j = 0; j < secondDimOfMassive[i]; j++)
+		{
+			cout << i << "," << j << "=" << massive[i][j] << '\t';
+		}
+		cout << endl;
+	}
+	for (i = 0; i < N; i++)
+	{
+		delete[] massive[i];
+	}
+	delete[] massive;
+	return 0;
+}
