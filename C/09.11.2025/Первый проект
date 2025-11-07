@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Point{
+	private:
+		int x, y;
+	public:
+		Point(int i = 0, int j = 0)
+		{
+			x = i;
+			y = j;
+		}
+		void display()
+		{
+			cout << "(" << x <<", " << y << ")" << endl;
+		}
+		void input()
+		{
+			char ch;
+			cin >> ch >> x >> ch >> y >> ch;
+		}
+		Point add(Point p3)
+		{
+			Point p4;
+			p4.x = x + p3.x;
+			p4.y = y + p3.y;
+			return p4;
+		}
+};
+
+int main()
+{
+	Point p, p1(1, 2), p2;
+	p.display();
+	p.input();
+	p2 = p.add(p1);
+	p2.display();
+	return 0;
+}
