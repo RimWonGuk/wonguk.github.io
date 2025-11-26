@@ -1,0 +1,315 @@
+﻿<html>
+<head>
+  <meta name="viewport"  content="width=device-width">
+    <style>
+        *{
+            margin:0px;
+        }
+
+#all2{
+align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+width:100%;
+height:auto;
+background-color:transparent;
+}
+#all{
+align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+width:100%;
+height:auto;
+background-color:transparent;
+
+}
+       
+.pic{
+display:flex;
+height:2.8vh;
+  width:2.3vw;
+ border:0.01px dashed pink;
+ border-radius:1px;
+
+}
+.pic1{
+display:flex;
+height:28px;
+  width:28px;
+ border-radius:1px;
+  
+}
+.new{
+
+display:flex;
+height:20px;   
+width:20px;
+border-radius:4px; 
+   align-items:center;
+  justify-content:center;
+  text-align:center;
+
+}
+#news{
+    align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+width:100%;
+background-color:transparent;
+height:20vh;
+}
+
+#left{
+    width:50%;
+    height:100vh;
+    margin:0px;
+    opacity:0;
+       background-color:transparent;
+}
+#right{
+    background-color:transparent;
+    width:50%;
+     height:100vh;
+     margin:0px;
+     opacity:0;
+    
+}
+body{
+    display:flex;
+    height:100vh;
+    background:url('img2.jpg');
+    background-size:cover;
+   
+}
+@keyframes color{
+    0%{color:aquamarine;}
+    20%{color:antiquewhite;}
+    40%{color:blue;}
+    60%{color:crimson;}
+    80%{color:darkmagenta;}
+    100%{color:aquamarine;}
+}
+#ask{ align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+    opacity:1;
+    position:absolute;
+    top:-20vh;
+    right:0px;
+    left:0px;
+    bottom:0px;
+      font-size:70px;
+     font-family:'PRK P Yeso';
+      animation-name:mark;
+     animation-iteration-count:1;
+     animation-fill-mode:forwards;
+     animation-duration:1s;
+    color:aquamarine;
+    text-shadow:2px 2px 2px red;
+   
+     animation-timing-function:ease-in-out;
+}
+@keyframes text{
+    0%{opacity:0;}
+    100%{opacity:100;}
+}
+#text{ align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:darkslategrey;
+display:flex;
+    opacity:0;
+    position:absolute;
+    top:20vh;
+    right:0px;
+    left:0px;
+    bottom:0px;
+      animation-name:text;
+     animation-iteration-count:1;
+     animation-fill-mode:forwards;
+     animation-duration:1s;
+     animation-delay:1s;
+    font-size:20px;
+    
+    font-family:'PRK P TitleMyongjo';
+    text-shadow:1px 1px 2px aqua;
+     animation-timing-function:ease-in-out;
+}
+#display{
+    align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+padding:0px;
+background-color:transparent;
+ position:absolute;
+    top:85vh;
+left:0px;
+right:0px;
+bottom:0px;
+opacity:0;
+}
+#display2{
+    align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+padding:0px;
+background-color:transparent;
+ position:absolute;
+    top:85vh;
+left:0px;
+right:0px;
+bottom:0px;
+opacity:0;
+
+}
+.score{
+    align-items:center;
+  justify-content:center;
+  text-align:left;
+display:flex;
+width:5vh;
+height:5vh;
+background-color:transparent;
+border-radius:2px;
+}
+@keyframes mark{
+    0%{  position:absolute;
+    top:-15vh;
+    left:-300vh;
+    right:0px;
+    bottom:0px;
+    opacity:0;
+    }
+     35%{  position:absolute;
+    top:-15vh;
+    left:-30vh;
+    right:0px;
+    bottom:0px;
+    opacity:0.1;
+     }
+     100%{   position:absolute;
+    top:-15vh;
+    right:0px;
+    left:0px;
+    bottom:0px;
+    opacity:1;
+     }
+}
+#mark{
+       position:absolute;
+    top:-20vh;
+    right:0px;
+    left:0px;
+    bottom:0px;
+      font-size:55px;
+     font-family:'PRK P Yeso';
+    align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+opacity:0;
+
+     animation-name:color;
+    animation-duration:3s;
+    animation-fill-mode:backwards;
+    animation-iteration-count:infinite;
+
+    text-shadow:2px 2px 2px pink;
+     text-shadow:2px 2px -2px pink;
+   
+}
+img{opacity:1;
+    position:absolute;
+    top:24vh;
+    left:44vw;
+    right:0px;
+      bottom:0px;
+    align-items:center;
+  justify-content:center;
+  text-align:center;
+display:flex;
+    width:10vw;
+    height:10vw;
+}
+
+    </style>
+</head>
+<body resource="1.wav">
+    <img src="main.png" >
+  
+   <div  id="mark">탑쌓기 1.0</div>
+    <div id="text">Enter를 눌러 시작합니다.</div>
+    <div id="ask">탑쌓기 1.0</div>
+        <div id="left">
+             <div id="news">
+                <div class='colum'>
+                    <div style="background-color:chocolate" id="new1-1" class="new"></div>
+                    <div style="background-color:chocolate" id="new1-2" class="new"></div>
+                    <div style="background-color:chocolate" id="new1-3" class="new"></div>
+                    <div style="background-color:chocolate" id="new1-4" class="new"></div>
+                </div>
+                <div class='colum'>
+                    <div style="background-color:chocolate" id="new2-1" class="new"></div>
+                    <div style="background-color:chocolate" id="new2-2" class="new"></div>
+                    <div style="background-color:chocolate" id="new2-3" class="new"></div>
+                    <div style="background-color:chocolate" id="new2-4" class="new"></div>
+                </div>
+                <div class='colum'>
+                    <div style="background-color:chocolate" id="new3-1" class="new"></div>
+                    <div style="background-color:chocolate" id="new3-2" class="new"></div>
+                    <div style="background-color:chocolate" id="new3-3" class="new"></div>
+                    <div style="background-color:chocolate" id="new3-4" class="new"></div>
+                </div>
+             </div>
+            <div id="all">
+               
+                </div>
+        </div>
+        <div id="right">
+            <div id="news">
+                <div class='colum'>
+                    <div style="background-color:chocolate" id="new21-1" class="new"></div>
+                    <div style="background-color:chocolate" id="new21-2" class="new"></div>
+                    <div style="background-color:chocolate" id="new21-3" class="new"></div>
+                    <div style="background-color:chocolate" id="new21-4" class="new"></div>
+                </div>
+                <div class='colum'>
+                    <div style="background-color:chocolate" id="new22-1" class="new"></div>
+                    <div style="background-color:chocolate" id="new22-2" class="new"></div>
+                    <div style="background-color:chocolate" id="new22-3" class="new"></div>
+                    <div style="background-color:chocolate" id="new22-4" class="new"></div>
+                </div>
+                <div class='colum'>
+                    <div style="background-color:chocolate" id="new23-1" class="new"></div>
+                    <div style="background-color:chocolate" id="new23-2" class="new"></div>
+                    <div style="background-color:chocolate" id="new23-3" class="new"></div>
+                    <div style="background-color:chocolate" id="new23-4" class="new"></div>
+                </div>
+            </div>
+            <div id="all2">
+              
+            </div>
+                    </div>
+    <div id="display">
+
+    </div>
+    <div id="display2">
+
+    </div>
+ 
+</body>
+
+
+
+<script src="main.js">
+</script>
+
+
+ 
+</html>
